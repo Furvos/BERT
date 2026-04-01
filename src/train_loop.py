@@ -1,4 +1,6 @@
-import get_stats, merge_vocab
+from data.vocab import vocab
+from get_stats import get_stats
+from merge_vocab import merge_vocab
 
 for i in range(5):
 
@@ -8,4 +10,6 @@ for i in range(5):
 
     vocab = merge_vocab(best, vocab)
 
-    print(vocab)
+    print(f"\nIteração {i+1}")
+    print("Par fundido:", best)
+    print("Vocab:", vocab)
